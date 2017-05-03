@@ -77,7 +77,6 @@ It is the register page in iPhone6 screen size. The empty space after verificate
 
 > * 好看的渐变色背景的代码来自于 [uigradients][19] 这个网站  
 The gradient background's code is from the [uigradients][19] website.
-
 > * 后端的验证码图片、验证方法使用了库  
 The verification codes and images in back-end is from the library.
 
@@ -98,6 +97,6 @@ The verification codes and images in back-end is from the library.
   [14]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/resetpw.html
   [15]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/login.html
   [16]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/login.html
-  [17]: https://sriting.github.io/HowToChooose-website/register-iphone6.png
-  [18]: https://sriting.github.io/HowToChooose-website/register-laptop.png
+  [17]: register-iphone6.png
+  [18]: register-laptop.png
   [19]: https://uigradients.com
