@@ -2,6 +2,7 @@
 **HowToChooose -- a Open Voting Social Website**  
 
 一个可以快速发起投票问题、有多种轻量型投票模式、投票过程公开且可对投票问题进行评论的开放性社区/社交网站。
+
 A social online community/website that support quickly posting voting questions, multiple lightweight types of voting, open process and result of voting and making comments for questions. 
 
 ---
@@ -36,11 +37,11 @@ HowToChooose 网站正如名字一样，Chooose中多的一个o象征着年轻�
 
 - [x] 新用户注册有验证码，以防恶意大量注册 --> [预览register.html][5]
 
-      New users need to fill in verification code before register to avoid malicious registration. --> [View register.html][6]
+New users need to fill in verification code before register to avoid malicious registration. --> [View register.html][6]
 
 - [x] 新用户填写注册表单后，发邮件给注册邮箱进行验证，用以绑定邮箱 --> [预览verification.html][7]
 
-      After submit register form, system will send email to users to varify the email address.  --> [View verification.html][8]
+After submit register form, system will send email to users to varify the email address.  --> [View verification.html][8]
 
 - [x] 已注册用户可登录 --> [预览login.html][9]
 
@@ -75,11 +76,9 @@ It is the register page in iPhone6 screen size. The empty space after verificate
 ### 2. 使用技术
 
 > * 好看的渐变色背景的代码来自于 [uigradients][19] 这个网站
-
-    The gradient background's code is from the [uigradients][19] website.
+The gradient background's code is from the [uigradients][19] website.
 > * 后端的验证码图片、验证方法使用了库
-
-    The verification codes and images in back-end is from the library.
+The verification codes and images in back-end is from the library.
 
 
   [1]: https://github.com/sriting
