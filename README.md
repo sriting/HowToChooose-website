@@ -75,8 +75,7 @@ All pages are self-adaption so that they can match most types of screen and disp
 
 ![rigester-iphone6][17] 
 
-这是iphone6尺寸的register页面，验证码输入框旁边的空位是给后端放验证码图片的预留位。
-
+这是iphone6尺寸的register页面，验证码输入框旁边的空位是给后端放验证码图片的预留位。  
 It is the register page in iPhone6 screen size. The empty space after verificate box is to reserve for verification images from the back-end.
 
 ![rigester-laptop][18]
