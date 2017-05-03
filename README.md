@@ -8,13 +8,13 @@ A social online community/website that support quickly posting voting questions,
 
 ---
 
-[HowToChooose 开放性投票社交网站](#1)  
-	[灵感和网站的目的](#1.1)  
-	[网站技术](#1.2)  
-[HowToChooose网站功能](#2)  
-	[用户注册、登录](#2.1)  
-		[1. 功能](#2.1.1)  
-		[2. 使用技术](#2.1.2)  
+* [HowToChooose 开放性投票社交网站](#1)  
+	* [灵感和网站的目的](#1.1)  
+	* [网站技术](#1.2)  
+* [HowToChooose网站功能](#2)  
+	* [用户注册、登录](#2.1)  
+		* [1. 功能](#2.1.1)  
+		* [2. 使用技术](#2.1.2)  
 
 
 <h2 id="1.1"> 灵感和网站的目的 </h2>
