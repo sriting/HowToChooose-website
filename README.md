@@ -6,7 +6,7 @@
 A social online community/website that support quickly posting voting questions, multiple lightweight types of voting, open process and result of voting and making comments for questions. 
 
 ---
-[TOC]
+
 ## 灵感和网站的目的
 
 HowToChooose的灵感来自于我经常能在微信朋友圈看到同学、朋友甚至很多长辈发的简单的投票文字，询问大家对选择某件事、某物品的建议，通过对评论的手动计数来得到结果。这种消息在朋友圈经常能出现，而且大家的问题普遍是短时效、轻量化、依赖社交、非正式化的单一问题，而这是目前大多数问卷、投票网站不能满足的，比如问卷星、monkeySurvey等，制作问卷的过程复杂、问卷形式太正式而提问者只想对一个问题发起投票、投票过程和结果不公开即不能满足提问者的社交化投票的需求。
@@ -45,23 +45,23 @@ After submit register form, system will send email to users to varify the email 
 
 - [x] 已注册用户可登录 --> [预览login.html][9]
 
-      Registered users can sign in. --> [View login.html][10]
+Registered users can sign in. --> [View login.html][10]
 
 - [x] 已注册用户忘记密码可发验证请求给绑定邮箱 --> [预览forgetpw.html][11]
 
-      Users who forgat passward can send the verification email to their email address. --> [View forgetpw.html][12]
+Users who forgat passward can send the verification email to their email address. --> [View forgetpw.html][12]
 
 - [x] 邮箱收到重设密码邮件，打开邮件中链接重新设置密码 --> [预览resetpw.html][13]
 
-      Users can open the link in verification email and reset their password. --> [View resetpw.html][14]
+Users can open the link in verification email and reset their password. --> [View resetpw.html][14]
 
 - [ ] 非注册用户可通过各社交平台账号不注册直接登录（需备案域名申请，未实现，预留了按键） --> [预览login.html][15]
 
-      Unregistered users can login website by social accounts directly. (need to put on record, unimplement, we reserve the buttons for socail accounts)  --> [View login.html][16]
+Unregistered users can login website by social accounts directly. (need to put on record, unimplement, we reserve the buttons for socail accounts)  --> [View login.html][16]
 
 - [x] 所有页面实现自适应（响应式网页），符合大部分主流笔记本、手机等设备的尺寸。展示如下：
 
-      All pages are self-adaption so that they can match most types of screen and display differently. See: 
+All pages are self-adaption so that they can match most types of screen and display differently. See: 
 
 ![rigester-iphone6][17] 
 
@@ -76,8 +76,11 @@ It is the register page in iPhone6 screen size. The empty space after verificate
 ### 2. 使用技术
 
 > * 好看的渐变色背景的代码来自于 [uigradients][19] 这个网站
+
 The gradient background's code is from the [uigradients][19] website.
+
 > * 后端的验证码图片、验证方法使用了库
+
 The verification codes and images in back-end is from the library.
 
 
