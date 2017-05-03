@@ -1,0 +1,463 @@
+/* author: sriting , time: 2017.5.3 */
+
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+/****-----start-body----****/
+body{
+	/*background:url(../images/bg.jpg) no-repeat center fixed ;*/
+	/*background-color: #47585c;*/
+
+background: #E6DADA; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #E6DADA , #274046);  /*Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #E6DADA , #274046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+ 	background-size: cover;
+ 	background-position: center;
+ 	background-size: 100% 100%;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.register{
+	margin:7em auto 0;
+	width:44%;
+}
+.inset {
+	text-align: center;
+	width: 100%;
+}
+.register h2,.register h3{
+	font-size: 1.2em;
+	text-align: center;
+	color:#fff;
+	padding:0.5em 0;
+}
+.register h3{
+	font-size: 1em;
+	text-align:left;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.register h3 span a{
+	color:#1888A8;
+	font-weight: bold;
+}
+/*facebook login*/
+.fblogin { 
+	float:left;
+	display: block;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background:#3B5998;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	border:1px solid #3B5998;
+	outline:none;
+	width: 49.7%;
+}
+.fblogin img {
+	padding:10px 12px;
+	float: left;
+	width:30px;	
+}
+.fblogin:hover{
+	background:#35497F;
+	color:#fff;
+}
+.fblogin i {
+	color: #fff;
+	padding: 14px 14px;
+	float: left;
+	font-size: 19px;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*Wechat login*/
+.wechatlogin { 
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	float:right;
+	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	background: #3EB135;
+	outline:none;
+	width: 49.7%;
+}
+.wechatlogin img {
+	padding: 12px 24px;
+	margin-left: -10px;
+	float:left;
+	width:30px;
+}
+.wechatlogin i {
+	color: #fff;
+	padding: 14px 14px;
+	margin-left: -13px;
+	float: left;
+	font-size: 19px;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.wechatlogin:hover{
+	background:#24A31A;
+	color:#fff;
+}
+/*QQ login*/
+.qqlogin { 
+	float:left;
+	display: block;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background:#4DAFEA;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	border:1px solid #4DAFEA;
+	outline:none;
+	width: 49.7%;
+}
+.qqlogin img {
+	padding:11px 12px;
+	float: left;
+	width:30px;	
+	height:30px;
+}
+.qqlogin:hover{
+	background:#4D8FEA;
+	color:#fff;
+}
+.qqlogin i {
+	color: #fff;
+	padding: 14px 14px;
+	float: left;
+	font-size: 19px;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*WeiBo login*/
+.weibologin { 
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	float:right;
+	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	background: #F8AA28;
+	outline:none;
+	width: 49.7%;
+}
+.weibologin img {
+	padding: 12px 24px;
+	margin-left: -10px;
+	float:left;
+	width:30px;
+}
+.weibologin i {
+	color: #fff;
+	padding: 14px 14px;
+	margin-left: -13px;
+	float: left;
+	font-size: 19px;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+}
+.weibologin:hover{
+	background:#F4982F;
+	color:#fff;
+}
+
+.lable-2 input[type="text"]:hover,input[type="Password"]:hover, input[type="vcode"]:hover ,#active {
+	color:#666666;
+	border-left:6px solid#40A46F;
+}
+.lable-2 input[type="text"],input[type="Password"],input[type="vcode"]{ 
+	padding: 14px;
+	width: 96%;
+	font-size: 1em;
+	margin: 10px 0px;
+	border:none;
+	color: #DCDCDC;
+	cursor: pointer;
+	background: none;
+	float: left;
+	outline: none;
+	font-weight: 700;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #ffffff;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	border-left: 6px solid #fff;
+	border-bottom: none;
+	border-right: none;
+	border-top: none;
+}
+
+.submit{
+	padding:3px 4px;
+	text-align: center;
+}
+input[type=submit] {
+	padding: 17px 30px;
+	color: #fff;
+	float: right;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #40A46F;
+	border: 1px solid #40A46F;
+	cursor: pointer;
+	font-size: 18px;
+	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	outline:none;
+	margin-left: -0.5%;
+	width: 101%;
+}
+
+.submit input[type=submit]:hover {
+	 background:#07793D;
+	 border:1px solid #07793D;
+}
+.term-condition{
+	padding: 14px;
+	text-align: center;
+	padding: 17px 30px;
+	color: #526267;
+	float: right;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #D6CDCD;
+	border: 2px solid #40A46F;
+	cursor: pointer;
+	font-size: 18px;
+	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	outline:none;
+	margin-left: -0.5%;
+	width: 91.3%;
+}
+.form-group{
+	width:65%;;
+}
+.captcha1 > input:hover{
+	color:#666666;
+	border-left:6px solid#40A46F;
+}
+.captcha1 > input{
+    width:80px;
+	padding: 14px;
+	width: 96%;
+	font-size: 1em;
+	margin: 10px 0px;
+	border:none;
+	color: #DCDCDC;
+	cursor: pointer;
+	background: none;
+	float: left;
+	outline: none;
+	font-weight: 700;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #ffffff;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	border-left: 6px solid #fff;
+	border-bottom: none;
+	border-right: none;
+	border-top: none;
+}
+.captcha1 > img{
+    float:right;
+    margin-top:5px;
+}
+
+/**start-copy-right**/
+.copy-right {
+	text-align: center;
+	margin: 4em 0;
+	color: #FFF;
+	font-size:1em;
+}
+
+/*----start-responsive design-----*/
+@media (max-width:3600px){
+	.captcha1{
+		margin-left: 8%;
+		margin-right: -20px; width:110px;
+	}
+}
+
+@media (max-width:1440px){
+	.register {
+		width:46%;
+		margin: 7em auto 0;
+	}
+	.label-2 img{
+		margin-left: 5%;
+	}
+	.captcha1{
+		margin-left: 0%;
+		margin-right: -20px; width:110px;
+	}
+}
+
+@media (max-width:1366px){
+	.register{
+		width: 48%;
+	}
+	.captcha1{
+		margin-left: 8%;
+		margin-right: -20px; width:15%;
+	}
+}
+@media (max-width:1280px){
+	.register{
+		width:53%;
+	}
+	.captcha1{
+		margin-left: 8%;
+		margin-right: -20px; width:15%;
+	}
+}
+@media (max-width:1024px){
+	.register{
+		width: 66%;
+		margin: 9em auto 0;
+	}	
+	.captcha1{
+		margin-left: 8%;
+		margin-right: -20px; width:15%;
+	}
+}
+@media (max-width:768px){
+	.register {
+	width:91%;
+	margin: 2em auto 0;
+	}
+	.captcha1{
+		margin-left: 8%;
+		margin-right: -20px; width:15%;
+	}
+}
+
+@media (max-width:640px){
+	.register {
+		width:90%;
+		margin: 2em auto 0;
+	}
+	.fblogin,.wechatlogin,.weibologin,.qqlogin{
+		margin:0 auto;
+		text-align:center;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.register h2, .register h3 {
+		padding: 0.5em 0;
+		font-size: 1em;
+	}
+	.lable input[type="text"]:first-child {
+	width: 92%;
+	}
+	.lable input[type="text"],.lable input[type="text"] {
+		width:92%;
+		font-size: 1em;
+		text-align: left;
+		margin: 10px 0px;
+		margin-left:0;
+	}
+	.lable-2 input[type="text"], .lable-2 input[type="text"],input[type="Password"]  { 
+		width: 92.3%;
+		font-size: 1em;
+		margin: 10px 0px;
+		text-align: left;
+	}
+	input[type=submit] {
+		padding: 15px 15px;
+		font-size: 1em;
+		color: #fff;
+		text-align:center;
+		width: 100%;
+	}
+	.register h3 {
+		text-align: center;	
+	}
+	.captcha1{
+		margin-left: 0%;
+		margin-right: -20px; width:20%;
+	}
+}
+@media (max-width:480px){
+	.register {
+		width:90%;
+		margin: 2em auto 0;
+	}
+	.lable input[type="text"],.lable input[type="text"] {
+		width:92%; 
+	}
+	.captcha1{
+		margin-left: 0%;
+		margin-right: -20px; width:70px;
+	}
+}
+@media (max-width:320px){
+	.register{
+		width: 90%;
+		margin: 2em auto 0;
+	}
+	.fblogin,.qqgin i {
+		font-size: 16px;
+	}
+	.wechatlogin,.weibologin i {
+		padding: 15px 0px;
+		font-size: 16px;
+	}
+	.lable input[type="text"]:first-child {
+		width: 90%;
+		padding: 13px 10px;
+	}
+	.lable input[type="text"], .lable input[type="text"],.lable-2 input[type="text"], .lable-2 input[type="text"] { 
+		width: 90%;
+		font-size: 16px;
+		padding:13px 10px;
+	}
+	input[type="Password"] {
+		font-size: 16px;
+		padding:13px 10px;
+		width: 90%;
+	}
+	.register h3 {
+	line-height: 28px;
+	}
+	.captcha1{
+		margin-left: 0%;
+		margin-right: -20px; width:17%;
+	}
+}

@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<link href="css/login.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- JS: load the page without delay -->
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+		</script>
+		
+</head>
+ 
+<body>
+	<div class="register">	
+				 <!-- start-main -->
+				 <div class="inset">
+				 	<div class="social-icons">
+		    			 <div class="fblogin"><a href="#"><img src="images/fb.png" alt=""/><i>Connect with Facebook </i><div class="clear"></div></a></div>	
+    					 <div class="wechatlogin"><a href="#"><img src="images/wechat.png" alt=""/><i>Connect with WeChat</i><div class="clear"></div></a></div>
+    					 <div class="qqlogin" style="margin-top: 12px;"><a href="#"><img src="images/qq.png" alt=""/><i>Connect with QQ </i><div class="clear"></div></a></div>	
+    					 <div class="weibologin" style="margin-top: 10px;"><a href="#"><img src="images/weibo.png" alt=""/><i>Connect with WeiBo</i><div class="clear"></div></a></div> 
+    					 <div class="clear"></div>
+					</div>
+				 </div>	
+				 <h2>Or sign up with</h2>
+				 <!-- post the register info to database by AJAX -->
+				 <form id="checkRegister" action="" method="post">
+		                    <div class="clear"> </div>
+		                    <div class="lable-2">
+		                    <h3 style="padding-bottom: 0px;">Account:</h3>
+		                    <input type="text" class="text" id="email" value="your@email.com " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'your@email.com ';}">
+		                    <h3 style="padding-bottom: 0px;">Password:</h3>
+		                     <input type="password" class="text" id="password" value="Password " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password ';}">
+							</div>
+							<h3 style="padding-bottom: 0px;">Verification code:</h3>
+							<input type="vcode" class="text" id="vcode" value="Verification code" onfocus="this.value=''" onblur="if(this.value==''){this.value='Verification code';}" style="width:65%;"/><div class="vcodeNumber" src="images/bg2.png"  style=" height:40px;cursor: pointer;background: none;float: left;padding: 14px;"></div>   
+							<div class="clear"> </div>
+							<div class="submit" style="margin-left: 0.3%; margin-right: -10px; padding-top: -20px;">
+								<input type="submit" id="submit" value="Create account">
+							</div>
+							<div class="clear"> </div>
+							<h3 style="color:#EF514B; ">error message<h3>
+							<h3 style="margin-top: -10px; ">Already have an account? <span><a href="login.html" style="color:#F2CA68;">Sign in </a> <span></h3>
+							<h3>By creating an account, you agree to our <b>Terms & Conditions:</b></h3>
+							<div class="term-condition" style="margin-left:4%; margin-right:-1%; text-align: left;margin-bottom: 20px;">You need to follow these terms:</br>
+							Welcome and thanks for using How To Chooose. When you use our services, you are entering into a legal agreement and you agree to all of these terms, so please take a few minutes to read over the following User Agreement.</br>
+							1.	Our purpose</br>
+							Our mission is to provide a web platform based on data collection system and online communication system for publics, which help people (especially for those terribly indecisive) make choice in a complicated situation or in an area which they are interested in. As well as to collect publics’ opinions for some hot topics through public voting.</br>
+							2.	Agreement about Privacy Policy</br>
+							You agree to our Privacy Policy, which covers how we collect, use, share, and store your personal information.</br>
+							3.	Your Membership</br>
+							You’ll keep your password a secret and do not share an account with anyone else. You also must promise that you will follow the rules, the law and all relative regulations.</br>
+							You agree to:</br>
+							1)	Try to choose a strong and secure password;</br>
+							2)	Keep your password secure and confidential;</br>
+							3)	Not transfer any part of your account(e.g., personal information)</br>
+							4)	You are responsible for anything that happens through your account unless you close it or report misuse.</br>
+							4.	Electronic communications</br>
+							When you use any How To Chooose service, send e-mail or other communications from your desktop or mobile device to us, you are communicating with us electronically. When you receive communications from us electronically, such as e-mail or notice and messages on this site, you can retain copies of these communications for your records. You agree that all agreements, notices, disclosures, and other communications that we provide to you electronically satisfy any legal requirement that such communications be in writing.</br>
+							5.	Reviews, comments, communications and other content</br>
+							Visitors may post reviews, comments, photos, and other content; and submit suggestions, ideas, comments, questions, or other information, so long as the content is not illegal, obscene, threatening, defamatory, invasive of privacy, infringing of intellectual property rights (including publicity rights), or otherwise injurious to third parties or objectionable, and does not consist of or contain software viruses, political campaigning, commercial solicitation, chain letters, mass mailings, or any form of "spam" or unsolicited commercial electronic messages. You may not use a false e-mail address, impersonate any person or entity. How To Chooose reserves the right (but not the obligation) to remove or edit such content.</br>
+							6.	Applicable law</br>
+							By using any How To Chooose Service, you agree to observe the law and regulations of People’s Republic of China, and use these law and regulations to govern any dispute of any sort that might arise between you and How To Chooose.
+							</div>
+					</form>
+		<!-- end-main -->
+		</div>
+		 <!-- start-copyright -->
+   					<div class="copy-right" style="margin-bottom: 40px; overflow: hidden; float:left; margin:0 30%;">
+						<p>Copyright @ 2017 How To Chooose Community. All Rights Reserved.</p> 
+					</div>
+				<!-- end-copyrigh -->
+	 
+</body>
+</html>
