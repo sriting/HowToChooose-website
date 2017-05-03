@@ -21,9 +21,9 @@ HowToChooose 网站正如名字一样，Chooose中多的一个o象征着年轻�
 
 *It's a group project that website is completed by two authors. I, [sriting][3] , am responsible for front-end design and programming, and Chen Jun, [garvinchen][4] , is in charge of back-end database. Other teammates that work on survey, design, testing and report are Liu Yining, Wang Xi, Fu Aining, Chen Kejin, Chen Xinyuan.* 
 
-前端部分使用（front-end）：html5, css3, javaScript, jQuery, Bootstrap
+前端部分使用（front-end）：'html5', 'css3', 'javaScript', 'jQuery', 'Bootstrap'
 
-后端部分使用（back-end）：python, Django, MySQL
+后端部分使用（back-end）：'python', 'Django', 'MySQL'
 
 网站使用过的开源库会在后续的网站各部分功能的说明中申明。
 
@@ -75,12 +75,10 @@ It is the register page in iPhone6 screen size. The empty space after verificate
 
 ### 2. 使用技术
 
-> * 好看的渐变色背景的代码来自于 [uigradients][19] 这个网站
-
+> * 好看的渐变色背景的代码来自于 [uigradients][19] 这个网站  
 The gradient background's code is from the [uigradients][19] website.
 
-> * 后端的验证码图片、验证方法使用了库
-
+> * 后端的验证码图片、验证方法使用了库  
 The verification codes and images in back-end is from the library.
 
 
