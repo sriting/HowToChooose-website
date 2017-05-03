@@ -1,4 +1,4 @@
-﻿# HowToChooose 开放性投票社交网站
+﻿<h1 id="1"> HowToChooose 开放性投票社交网站 </h1>
 **HowToChooose -- a Open Voting Social Website**  
 
 一个可以快速发起投票问题、有多种轻量型投票模式、投票过程公开且可对投票问题进行评论的开放性社区/社交网站。
@@ -7,7 +7,16 @@ A social online community/website that support quickly posting voting questions,
 
 ---
 
-## 灵感和网站的目的
+[HowToChooose 开放性投票社交网站](#1)
+	[灵感和网站的目的](#1.1)
+	[网站技术](#1.2)
+[HowToChooose网站功能](#2)
+	[用户注册、登录](#2.1)
+		[1. 功能](#2.1.1)
+		[2. 使用技术](#2.1.2)
+
+
+<h2 id="1.1"> 灵感和网站的目的 </h2>
 
 HowToChooose的灵感来自于我经常能在微信朋友圈看到同学、朋友甚至很多长辈发的简单的投票文字，询问大家对选择某件事、某物品的建议，通过对评论的手动计数来得到结果。这种消息在朋友圈经常能出现，而且大家的问题普遍是短时效、轻量化、依赖社交、非正式化的单一问题，而这是目前大多数问卷、投票网站不能满足的，比如问卷星、monkeySurvey等，制作问卷的过程复杂、问卷形式太正式而提问者只想对一个问题发起投票、投票过程和结果不公开即不能满足提问者的社交化投票的需求。
 
@@ -15,25 +24,25 @@ HowToChooose的灵感来自于我经常能在微信朋友圈看到同学、朋�
 
 HowToChooose 网站正如名字一样，Chooose中多的一个o象征着年轻人普遍被越来越多的选择所困扰，所以网站目的是为了帮助使用者们尤其是年轻人快速轻松解决“不懂怎么选择”、选择恐惧症等“现代病”。通过简便的图文制作并发起单个问题的投票，分享投票页面到各个社交问题，实时查看公开的投票数据，评论中别人给出更详细的建议，HowToChooose 可以满足广大年轻人日常生活中频率较高的征求好友及网友意见、晒照片、晒投票结果等的社交需求。另外，HowToChooose 本身也是个开放的社区，用户可以互相关注、收藏问题、展示或隐藏自己的动态，分享自己喜爱的别人的问题， HowToChooose 希望提供给大家一个更贴近日常生活的轻松的投票环境。
 
-## 网站技术
+<h2 id="1.2"> 网站技术 </h2>
 
 这是一个小组作业的作品，网站的开发部分主要由两个人负责。我 [sriting][1] - 前端页面设计开发；陈军 [garvinchen][2] 负责后端数据库开发。组里其他有调查、设计、测试、报告工作的组员有：刘一宁、王烯、付艾宁、陈珂瑾、陈鑫圆。
 
 *It's a group project that website is completed by two authors. I, [sriting][3] , am responsible for front-end design and programming, and Chen Jun, [garvinchen][4] , is in charge of back-end database. Other teammates that work on survey, design, testing and report are Liu Yining, Wang Xi, Fu Aining, Chen Kejin, Chen Xinyuan.* 
 
-前端部分使用（front-end）：'html5', 'css3', 'javaScript', 'jQuery', 'Bootstrap'
+前端部分使用（front-end）： `html5`, `css3`, `javaScript`, `jQuery`, `Bootstrap`
 
-后端部分使用（back-end）：'python', 'Django', 'MySQL'
+后端部分使用（back-end）：`python`, `Django`, `MySQL`
 
 网站使用过的开源库会在后续的网站各部分功能的说明中申明。
 
 *We will declare references of open sources and libraries we used in each function description in the following.*
 
-# HowToChooose网站功能
+<h1 id="2"> HowToChooose网站功能 </h1>
 
-## 用户注册、登录
+<h2 id="2.1"> 用户注册、登录 </h2>
 
-### 1. 功能
+<h3 id="2.1.1"> 1. 功能 </h3>
 
 - [x] 新用户注册有验证码，以防恶意大量注册 --> [预览register.html][5]
 
@@ -73,7 +82,7 @@ It is the register page in iPhone6 screen size. The empty space after verificate
 
 这是正常笔记本浏览器显示的样子。 Website layout in laptop's browsers.
 
-### 2. 使用技术
+<h3 id="2.1.2"> 2. 使用技术 </h3>
 
 > * 好看的渐变色背景的代码来自于 [uigradients][19] 这个网站  
 The gradient background's code is from the [uigradients][19] website.
