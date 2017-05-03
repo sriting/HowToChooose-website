@@ -27,8 +27,7 @@ HowToChooose 网站正如名字一样，Chooose中多的一个o象征着年轻�
 
 <h2 id="1.2"> 网站技术 </h2>
 
-这是一个小组作业的作品，网站的开发部分主要由两个人负责。我 [sriting][1] - 前端页面设计开发；陈军 [garvinchen][2] 负责后端数据库开发。组里其他有调查、设计、测试、报告工作的组员有：刘一宁、王烯、付艾宁、陈珂瑾、陈鑫圆。
-
+这是一个小组作业的作品，网站的开发部分主要由两个人负责。我 [sriting][1] - 前端页面设计开发；陈军 [garvinchen][2] 负责后端数据库开发。组里其他有调查、设计、测试、报告工作的组员有：刘一宁、王烯、付艾宁、陈珂瑾、陈鑫圆。  
 *It's a group project that website is completed by two authors. I, [sriting][3] , am responsible for front-end design and programming, and Chen Jun, [garvinchen][4] , is in charge of back-end database. Other teammates that work on survey, design, testing and report are Liu Yining, Wang Xi, Fu Aining, Chen Kejin, Chen Xinyuan.* 
 
 前端部分使用（front-end）： `html5`, `css3`, `javaScript`, `jQuery`, `Bootstrap`
@@ -45,33 +44,26 @@ HowToChooose 网站正如名字一样，Chooose中多的一个o象征着年轻�
 
 <h3 id="2.1.1"> 1. 功能 </h3>
 
-- [x] 新用户注册有验证码，以防恶意大量注册 --> [预览register.html][5]
+- [x] 新用户注册有验证码，以防恶意大量注册 --> [预览register.html][5]  
+*New users need to fill in verification code before register to avoid malicious registration. --> [View register.html][6]*
 
-New users need to fill in verification code before register to avoid malicious registration. --> [View register.html][6]
+- [x] 新用户填写注册表单后，发邮件给注册邮箱进行验证，用以绑定邮箱 --> [预览verification.html][7]  
+*After submit register form, system will send email to users to varify the email address.  --> [View verification.html][8]*
 
-- [x] 新用户填写注册表单后，发邮件给注册邮箱进行验证，用以绑定邮箱 --> [预览verification.html][7]
+- [x] 已注册用户可登录 --> [预览login.html][9]  
+*Registered users can sign in. --> [View login.html][10]*
 
-After submit register form, system will send email to users to varify the email address.  --> [View verification.html][8]
+- [x] 已注册用户忘记密码可发验证请求给绑定邮箱 --> [预览forgetpw.html][11]  
+*Users who forgat passward can send the verification email to their email address. --> [View forgetpw.html][12]*
 
-- [x] 已注册用户可登录 --> [预览login.html][9]
+- [x] 邮箱收到重设密码邮件，打开邮件中链接重新设置密码 --> [预览resetpw.html][13]  
+*Users can open the link in verification email and reset their password. --> [View resetpw.html][14]*
 
-Registered users can sign in. --> [View login.html][10]
+- [ ] 非注册用户可通过各社交平台账号不注册直接登录（需备案域名申请，未实现，预留了按键） --> [预览login.html][15]  
+*Unregistered users can login website by social accounts directly. (need to put on record, unimplement, we reserve the buttons for socail accounts)  --> [View login.html][16]*
 
-- [x] 已注册用户忘记密码可发验证请求给绑定邮箱 --> [预览forgetpw.html][11]
-
-Users who forgat passward can send the verification email to their email address. --> [View forgetpw.html][12]
-
-- [x] 邮箱收到重设密码邮件，打开邮件中链接重新设置密码 --> [预览resetpw.html][13]
-
-Users can open the link in verification email and reset their password. --> [View resetpw.html][14]
-
-- [ ] 非注册用户可通过各社交平台账号不注册直接登录（需备案域名申请，未实现，预留了按键） --> [预览login.html][15]
-
-Unregistered users can login website by social accounts directly. (need to put on record, unimplement, we reserve the buttons for socail accounts)  --> [View login.html][16]
-
-- [x] 所有页面实现自适应（响应式网页），符合大部分主流笔记本、手机等设备的尺寸。展示如下：
-
-All pages are self-adaption so that they can match most types of screen and display differently. See: 
+- [x] 所有页面实现自适应（响应式网页），符合大部分主流笔记本、手机等设备的尺寸。展示如下：  
+*All pages are self-adaption so that they can match most types of screen and display differently. See: *
 
 ![rigester-iphone6][17] 
 
@@ -84,10 +76,10 @@ It is the register page in iPhone6 screen size. The empty space after verificate
 
 <h3 id="2.1.2"> 2. 使用技术 </h3>
 
-> * 好看的渐变色背景的代码来自于 [uigradients][19] 这个网站  
-The gradient background's code is from the [uigradients][19] website.
-> * 后端的验证码图片、验证方法使用了 [django-captcha][20] 库  
-The verification codes and images in back-end is from the [django-captcha][20] library.
+> * 好看的渐变色背景的代码来自于 [uigradients][19] 这个网站  
+*The gradient background's code is from the [uigradients][19] website.*
+> * 后端的验证码图片、验证方法使用了 [django-captcha][20] 库  
+*The verification codes and images in back-end is from the [django-captcha][20] library.*
 
 
   [1]: https://github.com/sriting
