@@ -1,4 +1,5 @@
 ﻿<h1 id="1"> HowToChooose 开放性投票社交网站 </h1>
+
 **HowToChooose -- a Open Voting Social Website**  
 
 一个可以快速发起投票问题、有多种轻量型投票模式、投票过程公开且可对投票问题进行评论的开放性社区/社交网站。
@@ -7,13 +8,13 @@ A social online community/website that support quickly posting voting questions,
 
 ---
 
-[HowToChooose 开放性投票社交网站](#1)
-	[灵感和网站的目的](#1.1)
-	[网站技术](#1.2)
-[HowToChooose网站功能](#2)
-	[用户注册、登录](#2.1)
-		[1. 功能](#2.1.1)
-		[2. 使用技术](#2.1.2)
+[HowToChooose 开放性投票社交网站](#1)  
+	[灵感和网站的目的](#1.1)  
+	[网站技术](#1.2)  
+[HowToChooose网站功能](#2)  
+	[用户注册、登录](#2.1)  
+		[1. 功能](#2.1.1)  
+		[2. 使用技术](#2.1.2)  
 
 
 <h2 id="1.1"> 灵感和网站的目的 </h2>
