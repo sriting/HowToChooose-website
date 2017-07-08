@@ -18,6 +18,10 @@ A social online community/website that support quickly posting voting questions,
 	* [主页面（热门问题页）、子页面（问题细节页）Main page and subpage](#2.2)
 		* [1. 功能 Functions](#2.2.1)
 		* [2. 使用技术 Techniques](#2.2.2)
+	* [搜索结果页、用户中心页、个人信息页  Search result page, user center page and personal information page](#2.3)
+		* [1. 功能 Functions](#2.3.1)
+		* [2. 使用技术 Techniques](#2.3.2)
+
 
 
 <h2 id="1.1"> 灵感和网站的目的  Inspiration and the goal</h2>
@@ -149,6 +153,8 @@ It is the register page in iPhone6 screen size. The empty space after verificate
 *The multiple choices voting shows result by using the Pie chart module of the [Chart.js][20] library, and the JQuery code has been modified to implement the redisplay of voting result, or transmit the voted data by json to the Pie chart module.*
 > * 图片展示的放大缩小功能使用了 [Zoom.js][22] 库
 *The function of zooming in or out employed the [Zoom.js][22] library.*
+> * 一键返回页面顶部的功能是一个叫 [Unify][28] 的Bootstrap模板提供的Scroll-To-Top功能提供的
+*The function that scroll back to the page top is provided by the Scroll-To-Top module of a Bootstrap template named [Unify][28].*
 
 <h2 id="2.3"> 搜索结果页、用户中心页、个人信息页  Search result page, user center page and personal information page</h2>
 
@@ -182,7 +188,7 @@ It is the register page in iPhone6 screen size. The empty space after verificate
 
 ![userCenter-All][26]
 
-- [x]（个人信息页）用户可以在个人信息页填写个人信息（非必填），还可以修改头像，已填的信息和头像会被展示在用户中心页。用户也可以设置是否允许来访者浏览自己的各种动态。页面如下图：
+- [x] （个人信息页）用户可以在个人信息页填写个人信息（非必填），还可以修改头像，已填的信息和头像会被展示在用户中心页。用户也可以设置是否允许来访者浏览自己的各种动态。页面如下图：
 
 *(Personal Information page) Users can fill in their personal information in this page (dispensable), and can change their images. All filled information will be shown in User Center page. Users can also set whether the visitors are allowed to see their own status. See:* 
 
@@ -192,6 +198,33 @@ It is the register page in iPhone6 screen size. The empty space after verificate
 <h3 id="2.3.2"> 2. 使用技术  Techniques </h3>
 > * 在用户中心页使用了大量ajax异步来传输json，从而实现关注用户、删除问题、删除评论、删除收藏、删除系统消息等功能对后台数据库的异步请求而不需要重载整个页面。
 *The asynchronous request of Ajax is used in User Center page to transmit json data, so the functions, such as following other users and deleting questions, comments, collections and system messages, can send request to database and execute without reloading the whole page.*
+
+<h2 id="2.4"> 提问页面  Post Question page</h2>
+
+<h3 id="2.4.1"> 1. 功能  Functions </h3>
+
+#### 提问页面 (Post Question page)  -->  [post.html][29]
+
+- [x] 第一步（Step 1）填写问题标题、选择问题的主题类型和投票形式。注意，问题标题（Title）不能为空，问题的主题类型（Topic）必须选择，问题的投票形式默认为 **赞/踩（Up/Down）**，也可选择 **多选(Multiple Choices)**。当标题为空或问题的主题类型未选中时提交问题，网页会报告提交错误。全部填完，则可按“Next”进行下一步。
+
+*Step 1: Fill in title of question, choose topic and vote type of question. Note that Title of question cannot be empty and Topic must be selected. Default vote type of question is **Up/Down**, or you can choose **Multiple Choices**. When the title is null or the topic is unselected, the webpage will report error if you submit. Clicking "Next" can go to next step after you finish entering.*
+
+- [x] 选择 **赞/踩（Up/Down）**的第二步（Step 2）：填写对问题的描述、上传和问题相关的图片。注意，问题描述和上传图片不能同时为空，至少要写问题描述，或至少上传一张图片，才能发表问题。完成问题，可按“Post”提交问题并跳到提交完成页面，也可按“Previous”按钮返回到上一步修改内容，且第二步已填的内容会被保留。但如果返回第一步更改了投票形式，第二步已填的内容就会被删除，需要重新填写。效果看如下动图：
+
+*Step 2 of **Up/Down**: Fill in description of question, upload pictures related to question. Note that description and uploaded picture cannot be empty at the same time, which means that at least you should descript the question or you ought to upload at least one picture so that you can post question. When finishing, you can press "Post" button to submit question and the page will jumps to Completed page, or you can click "Previous" to go back to the last step to modify some data and the content of this step 2 will be retained. However, if you changes the vote type of question after you go back from step 2, the completed content in Step 2 will be removed and you need to enter again. See:
+
+![post-UpDown][30]
+
+- [x] 选择 **多选(Multiple Choices）**的第二步（Step 2）：选择多选的个数、填写每个选项的内容、填写问题的描述、上传图片。填写描述和上传图片与上面类似。注意，多选的个数默认为2。选完选项后，选项内容栏的数量会根据选择的数目改变。所有选项内容栏不能为空，否则提交问题时网页会报告提交错误。完成填写，可按“Post”提交问题，也可按“Previous"返回上一步。效果如下图：
+
+* Step 2 of **Multiple Choices**: choose the number of choices, fill in contents of each choices, fill in description of question, upload pictures. Writing description and uploading images are similar to above. Note that the default number of multiple choices is 2. After you selected the number of choices, the number of choice content bars will change according to the number you choosed. All content of choice bars are not allowed to be empty, otherwise the webpage will report error when you submit question. After finishing, you can click "Post" to go forward or click "Previous" to go back. See:
+
+![post-Multiple][31]
+
+<h3 id="2.4.2"> 2. 使用技术  Techniques </h3>
+
+> * 由于提交问题的逻辑比较复杂，分两条支线，我在网上下载的一个好看的分步填写表单的模板，并在此基础上用JQuery对模板的步骤逻辑部分（javascript）彻底重写。我用到了JQuery的遍历来使表单进入下步或返回上步（已填的数据会被保留），用JQuery的众多选择器来选中并判断用户输入的相应输入框的内容是否符合要求，且使用JQuery的事件监听来使得选项框的数量能根据用户选择的数字动态变化。
+*Due to the complexity of logic of posting question, the main steps are separated into two paths. I use a template of step-by-step form and completely rewrite the logic part (javascript) of this template by JQuery. I use the traversal of JQuery to implement going forward and going back in same page and the filled data is retained. The selectors of JQuery are employed to select and check whether the users' inputs meet the requirements. I also use the event listening of JQuery to dynamically change the number of choice content bars correspoding to the digit user selected.*
 
 
   [1]: https://github.com/sriting
@@ -221,5 +254,9 @@ It is the register page in iPhone6 screen size. The empty space after verificate
   [25]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/personInfo.html
   [26]: image/userCenter-All.gif
   [27]: image/personInfo-All.png
+  [28]: http://www.gprinmobiliaria.cl/plantilla/Documentation/ 
+  [29]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/post.html
+  [30]: image/post-UpDown.gif
+  [31]: image/post-Multiple.gif
 
 
