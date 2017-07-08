@@ -170,10 +170,10 @@
         	<div class="headline"><h3>Cast your vote</h3></div>
             <div class="span10 vote_bar">
 	            <div class ="vote4content">
-                    <div class="btncontent"><a class="vote1btn" href="javascript:void(0);">A</a> The road is beautiful.</div>
-                    <div class="btncontent"><a class="vote2btn" href="javascript:void(0);">B</a> The sunshine is great.</div>
-                    <div class="btncontent"><a class="vote3btn" href="javascript:void(0);">C</a> The view of ocean is awesome.</div>
-                    <div class="btncontent"><a class="vote4btn" href="javascript:void(0);">D</a> So many tidy houses.</div>
+                    <div class="btncontent"><a class="vote1btn" href="javascript:void(0);">A <span class="vote1num">3</span></a> The road is beautiful.</div>
+                    <div class="btncontent"><a class="vote2btn" href="javascript:void(0);">B <span class="vote2num">2</span></a> The sunshine is great.</div>
+                    <div class="btncontent"><a class="vote3btn" href="javascript:void(0);">C <span class="vote3num">1</span></a> The view of ocean is awesome.</div>
+                    <div class="btncontent"><a class="vote4btn" href="javascript:void(0);">D <span class="vote4num">1</span></a> So many tidy houses.</div>
                 </div>
                 <div class="htmleaf-content">
                     <div class="canvas-holder" style="margin:0px auto;width:160px; height: 160px;">
@@ -311,6 +311,7 @@
                 var idpath = $(this).parents(".vote_bar").find(".canvas-holder").find("canvas").attr('id');//遍历找第二个id，pie的id
                 var ctxs = document.getElementById(idpath).getContext("2d");
                 var newvalue = valuea+1;
+                $(this).parents(".vote4content").find(".vote1num").html(newvalue);
                 pieData[0]={
                     value: newvalue,
                     color:"#FFC107",
@@ -337,6 +338,7 @@
                 var idpath = $(this).parents(".vote_bar").find(".canvas-holder").find("canvas").attr('id');//遍历找第二个id，pie的id
                 var ctxs = document.getElementById(idpath).getContext("2d");
                 var newvalue = valueb+1;
+                $(this).parents(".vote4content").find(".vote2num").html(newvalue);
                 pieData[1]={
                     value: newvalue,
                     color: "#FB8C00",
@@ -364,6 +366,7 @@
                 var idpath = $(this).parents(".vote_bar").find(".canvas-holder").find("canvas").attr('id');//遍历找第二个id，pie的id
                 var ctxs = document.getElementById(idpath).getContext("2d");
                 var newvalue = valuec+1;
+                $(this).parents(".vote4content").find(".vote3num").html(newvalue);
                 pieData[2]={
                     value: newvalue,
                     color: "#F4511E",
@@ -391,6 +394,7 @@
                 var idpath = $(this).parents(".vote_bar").find(".canvas-holder").find("canvas").attr('id');//遍历找第二个id，pie的id
                 var ctxs = document.getElementById(idpath).getContext("2d");
                 var newvalue = valued+1;
+                $(this).parents(".vote4content").find(".vote4num").html(newvalue);
                 pieData[3]={
                     value: newvalue,
                     color: "#6D4C41",

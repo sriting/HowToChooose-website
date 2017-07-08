@@ -97,7 +97,7 @@ It is the register page in iPhone6 screen size. The empty space after verificate
 
 #### 主页面（热门问题页） Main page (Hot topic page)  --> [mainpage.html][16] 
 
-#### 子页面（问题细节页） Subpage（comment page)  --> [commentPage.html(Up or Down)][18] , [commentPage2.html(Multiple choice)][19] 
+#### 子页面（问题细节页） Subpage（comment page)  --> [commentPage.html(赞踩页 Up or Down)][18] , [commentPage2.html(多选页 Multiple choice)][19] 
 
 
 - [x] 可对感兴趣的问题进行**赞/踩**投票，投票结果立即以 百分比条 动态显示，且投完票后不可更改选项。 效果如下：
@@ -133,7 +133,7 @@ It is the register page in iPhone6 screen size. The empty space after verificate
 
 *Users can collect their favoraite questions by Star button, and they can also cancel collection by pressing Star button again. See the following GIF in phone size.*
 
-![mainpage-All-phone][17]
+![mainpage-All][17]
 
 - [x] 用户可点击主页面的“post your question”来发布自己的问题，也可以在子页面的“leave a comment"下发表对别人问题的评论。效果如上面动图。
 
@@ -149,6 +149,49 @@ It is the register page in iPhone6 screen size. The empty space after verificate
 *The multiple choices voting shows result by using the Pie chart module of the [Chart.js][20] library, and the JQuery code has been modified to implement the redisplay of voting result, or transmit the voted data by json to the Pie chart module.*
 > * 图片展示的放大缩小功能使用了 [Zoom.js][22] 库
 *The function of zooming in or out employed the [Zoom.js][22] library.*
+
+<h2 id="2.3"> 搜索结果页、用户中心页、个人信息页  Search result page, user center page and personal information page</h2>
+
+<h3 id="2.3.1"> 1. 功能  Functions </h3>
+
+#### 搜索结果页 (Search result page)  -->  [searchResult.html][23]
+
+#### 用户中心页 (User center page)  -->  [userCenter.html][24]
+
+#### 个人信息页 (Personal information page)  -->  [personInfo.html][25]
+
+- [x] (搜索结果页）用户不仅可以通过关键字来搜索标题或内容与搜索内容相匹配的问题，还可以通过搜索用户名来得到用户搜索结果。
+
+*(Search Result page) Users can not only search questions by titles or contents, but also search other user accounts by users' nickname.
+
+- [x]（用户中心页）用户在自己的用户中心可以看到自己的“已发布问题”，“我的评论”，“我收藏的问题”，“我的投票历史”，“系统消息”和“我关注的用户”。其中除了“系统消息”，其他栏都默认对外开放可见（或根据用户在个人信息页的设置“对外不可见”来隐藏自己的动态），别的用户都可以浏览该用户的用户中心。
+
+*(User Center page) Users can view their own statements like "My posted questions", "My comments", "My collected quesiton", "My voting history", "System message" and "My followed users" in their user center. Except "System message", all other columns are visible to other users (unless the user set "hide the records from visitors" to conceal their status).*
+
+- [x]（用户中心页）用户可以删除自己的问题、评论、收藏、系统消息。注意，当用户删除自己的问题时，所有关于这个问题的投票和评论也都被删除了，所以HowToChooose社区规定：当投票总数超过50票时，该问题就成为公众问题，问题不可被提问者删除（该功能已在后端实现）。另外，用户不可以删除自己的投票记录，因为社区规定一旦用户投票完成以后，不可以改变自己的投票。
+
+*(User Center page) Users can delete their posted question, comments, collections and system messages. Note that when users delete their posted questions, all votes and comments of this question will be removed too. Therefore, the How To Chooose community specifies that "When the number of votes exceeds 50, the question changes to public question and its questioner cannot delete it any more." (this function has been implement in back-end). In addition, users are not allowed to remove their voting histories because the community regulates that users cannot modify their votes after voting questions.*
+
+- [x]（用户中心页）当访问者进入其他社区成员的用户中心页时，访问者可以点击心形按钮来关注该用户，再次点击按钮可取消关注。
+
+*(User Center page) When visitors enter user center of one member, visitor can follow this user by clicking the heart-shaped button. Clicking this button again can unfollow.
+
+- [x]（用户中心页）用户可以在自己的用户中心页的“Edit Profile"按钮来进入个人信息页面，除用户自己之外的访问者看不到这个按钮，也不能进入该用户的个人信息页面。 以上四条功能的效果可看下面的动图：
+
+*(User Center page) Users can press "Edit Profile" button in their own User Center page to enter the Personal Info page, while all other visitors are not allowed to see them. See：
+
+![userCenter-All][26]
+
+- [x]（个人信息页）用户可以在个人信息页填写个人信息（非必填），还可以修改头像，已填的信息和头像会被展示在用户中心页。用户也可以设置是否允许来访者浏览自己的各种动态。页面如下图：
+
+*(Personal Information page) Users can fill in their personal information in this page (dispensable), and can change their images. All filled information will be shown in User Center page. Users can also set whether the visitors are allowed to see their own status. See:* 
+
+![personInfo-All][27]
+
+
+<h3 id="2.3.2"> 2. 使用技术  Techniques </h3>
+> * 在用户中心页使用了大量ajax异步来传输json，从而实现关注用户、删除问题、删除评论、删除收藏、删除系统消息等功能对后台数据库的异步请求而不需要重载整个页面。
+*The asynchronous request of Ajax is used in User Center page to transmit json data, so the functions, such as following other users and deleting questions, comments, collections and system messages, can send request to database and execute without reloading the whole page.*
 
 
   [1]: https://github.com/sriting
@@ -167,11 +210,16 @@ It is the register page in iPhone6 screen size. The empty space after verificate
   [14]: image/mainpage-Multiple.gif
   [15]: image/mainpage-Collapse+image.gif
   [16]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/mainpage.html
-  [17]: image/mainpage-All-phone.gif
+  [17]: image/mainpage-All.gif
   [18]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/commentPage.html
   [19]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/commentPage2.html
   [20]: http://www.chartjs.org
   [21]: image/mainpage-scroll-to-top.png
   [22]: https://github.com/hakimel/zoom.js
+  [23]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/searchResult.html
+  [24]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/userCenter.html
+  [25]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/personInfo.html
+  [26]: image/userCenter-All.gif
+  [27]: image/personInfo-All.png
 
 
