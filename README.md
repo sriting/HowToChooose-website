@@ -9,15 +9,18 @@ A social online community/website that support quickly posting voting questions,
 ---
 
 * [HowToChooose 开放性投票社交网站](#1)  
-	* [灵感和网站的目的](#1.1)  
-	* [网站技术](#1.2)  
-* [HowToChooose网站功能](#2)  
-	* [用户注册、登录](#2.1)  
-		* [1. 功能](#2.1.1)  
-		* [2. 使用技术](#2.1.2)  
+	* [灵感和网站的目的 Inspiration and the goal](#1.1)  
+	* [网站技术 Technologies](#1.2)  
+* [HowToChooose网站功能 Functions of HowToChooose](#2)  
+	* [用户注册、登录 User register and login](#2.1)  
+		* [1. 功能 Functions](#2.1.1)  
+		* [2. 使用技术 Techniques](#2.1.2)  
+	* [主页面（热门问题页）、子页面（问题细节页）Main page and subpage](#2.2)
+		* [1. 功能 Functions](#2.2.1)
+		* [2. 使用技术 Techniques](#2.2.2)
 
 
-<h2 id="1.1"> 灵感和网站的目的 </h2>
+<h2 id="1.1"> 灵感和网站的目的  Inspiration and the goal</h2>
 
 HowToChooose的灵感来自于我经常能在微信朋友圈看到同学、朋友甚至很多长辈发的简单的投票文字，询问大家对选择某件事、某物品的建议，通过对评论的手动计数来得到结果。这种消息在朋友圈经常能出现，而且大家的问题普遍是短时效、轻量化、依赖社交、非正式化的单一问题，而这是目前大多数问卷、投票网站不能满足的，比如问卷星、monkeySurvey等，制作问卷的过程复杂、问卷形式太正式而提问者只想对一个问题发起投票、投票过程和结果不公开即不能满足提问者的社交化投票的需求。
 
@@ -25,10 +28,10 @@ HowToChooose的灵感来自于我经常能在微信朋友圈看到同学、朋�
 
 HowToChooose 网站正如名字一样，Chooose中多的一个o象征着年轻人普遍被越来越多的选择所困扰，所以网站目的是为了帮助使用者们尤其是年轻人快速轻松解决“不懂怎么选择”、选择恐惧症等“现代病”。通过简便的图文制作并发起单个问题的投票，分享投票页面到各个社交问题，实时查看公开的投票数据，评论中别人给出更详细的建议，HowToChooose 可以满足广大年轻人日常生活中频率较高的征求好友及网友意见、晒照片、晒投票结果等的社交需求。另外，HowToChooose 本身也是个开放的社区，用户可以互相关注、收藏问题、展示或隐藏自己的动态，分享自己喜爱的别人的问题， HowToChooose 希望提供给大家一个更贴近日常生活的轻松的投票环境。
 
-<h2 id="1.2"> 网站技术 </h2>
+<h2 id="1.2"> 网站技术  Technologies</h2>
 
 这是一个小组作业的作品，网站的开发部分主要由两个人负责。我 [sriting][1] - 前端页面设计开发；陈军 [garvinchen][2] 负责后端数据库开发。组里其他有调查、设计、测试、报告工作的组员有：刘一宁、王烯、付艾宁、陈珂瑾、陈鑫圆。  
-*It's a group project that website is completed by two authors. I, [sriting][3] , am responsible for front-end design and programming, and Chen Jun, [garvinchen][4] , is in charge of back-end database. Other teammates that work on survey, design, testing and report are Liu Yining, Wang Xi, Fu Aining, Chen Kejin, Chen Xinyuan.* 
+*It's a group project that website is completed by two authors. I, [sriting][1] , am responsible for front-end design and programming, and Chen Jun, [garvinchen][2] , is in charge of back-end database. Other teammates that work on survey, design, testing and report are Liu Yining, Wang Xi, Fu Aining, Chen Kejin, Chen Xinyuan.* 
 
 前端部分使用（front-end）： `html5`, `css3`, `javaScript`, `jQuery`, `Bootstrap`
 
@@ -38,74 +41,136 @@ HowToChooose 网站正如名字一样，Chooose中多的一个o象征着年轻�
 
 *We will declare references of open sources and libraries we used in each function description in the following.*
 
-<h1 id="2"> HowToChooose网站功能 </h1>
+<h1 id="2"> HowToChooose网站功能  Functions of HowToChooose</h1>
 
-<h2 id="2.1"> 用户注册、登录 </h2>
+<h2 id="2.1"> 用户注册、登录  User register and login</h2>
 
-<h3 id="2.1.1"> 1. 功能 </h3>
+<h3 id="2.1.1"> 1. 功能  Functions</h3>
 
-- [x] 新用户注册有验证码，以防恶意大量注册 --> [预览register.html][5]  
+- [x] 新用户注册有验证码，以防恶意大量注册 --> [预览register.html][3]  
 
-*New users need to fill in verification code before register to avoid malicious registration. --> [View register.html][6]*
+*New users need to fill in verification code before register to avoid malicious registration. --> [View register.html][3]*
 
-- [x] 新用户填写注册表单后，发邮件给注册邮箱进行验证，用以绑定邮箱 --> [预览verification.html][7]  
+- [x] 新用户填写注册表单后，发邮件给注册邮箱进行验证，用以绑定邮箱 --> [预览verification.html][4]  
 
-*After submit register form, system will send email to users to varify the email address.  --> [View verification.html][8]*
+*After submit register form, system will send email to users to varify the email address.  --> [View verification.html][4]*
 
-- [x] 已注册用户可登录 --> [预览login.html][9]  
+- [x] 已注册用户可登录 --> [预览login.html][5]  
 
-*Registered users can sign in. --> [View login.html][10]*
+*Registered users can sign in. --> [View login.html][5]*
 
-- [x] 已注册用户忘记密码可发验证请求给绑定邮箱 --> [预览forgetpw.html][11]  
+- [x] 已注册用户忘记密码可发验证请求给绑定邮箱 --> [预览forgetpw.html][6]  
 
-*Users who forgat passward can send the verification email to their email address. --> [View forgetpw.html][12]*
+*Users who forgat passward can send the verification email to their email address. --> [View forgetpw.html][6]*
 
-- [x] 邮箱收到重设密码邮件，打开邮件中链接重新设置密码 --> [预览resetpw.html][13]  
+- [x] 邮箱收到重设密码邮件，打开邮件中链接重新设置密码 --> [预览resetpw.html][7]  
 
-*Users can open the link in verification email and reset their password. --> [View resetpw.html][14]*
+*Users can open the link in verification email and reset their password. --> [View resetpw.html][7]*
 
-- [ ] 非注册用户可通过各社交平台账号不注册直接登录（需备案域名申请，未实现，预留了按键） --> [预览login.html][15]  
+- [ ] 非注册用户可通过各社交平台账号不注册直接登录（需备案域名申请，未实现，预留了按键） --> [预览login.html][8]  
 
-*Unregistered users can login website by social accounts directly. (need to put on record, unimplement, we reserve the buttons for socail accounts)  --> [View login.html][16]*
+*Unregistered users can login website by social accounts directly. (need to put on record, unimplement, we reserve the buttons for socail accounts)  --> [View login.html][8]*
 
 - [x] 所有页面实现自适应（响应式网页），符合大部分主流笔记本、手机等设备的尺寸。展示如下：  
 
-*All pages are self-adaption so that they can match most types of screen and display differently. See: *
+*All pages are self-adaption so that they can match most types of screen and display differently. See:*
 
-![rigester-iphone6][17] 
+![rigester-iphone6][9] 
 
 这是iphone6尺寸的register页面，验证码输入框旁边的空位是给后端放验证码图片的预留位。  
 It is the register page in iPhone6 screen size. The empty space after verificate box is to reserve for verification images from the back-end.
 
-![rigester-laptop][18]
+![rigester-laptop][10]
 
-这是正常笔记本浏览器显示的样子。 Website layout in laptop's browsers.
+这是正常笔记本浏览器显示的样子。 This is the website layout in laptop's browsers.
 
-<h3 id="2.1.2"> 2. 使用技术 </h3>
+<h3 id="2.1.2"> 2. 使用技术  Techniques</h3>
 
-> * 好看的渐变色背景的代码来自于 [uigradients][19] 这个网站  
-*The gradient background's code is from the [uigradients][19] website.*
-> * 后端的验证码图片、验证方法使用了 [django-captcha][20] 库  
-*The verification codes and images in back-end is from the [django-captcha][20] library.*
+> * 好看的渐变色背景的代码来自于 [uigradients][11] 这个网站  
+*The gradient background's code is from the [uigradients][11] website.*
+> * 后端的验证码图片、验证方法使用了 [django-captcha][12] 库  
+*The verification codes and images in back-end is from the [django-captcha][12] library.*
+
+<h2 id="2.2"> 主页面（热门问题页）、子页面（问题细节页） Main page and subpage</h2>
+
+<h3 id="2.2.1"> 1. 功能  Functions</h3>
+
+<h4> 主页面（热门问题页） Main page (Hot topic page)  --> [mainpage.html][16] </h4>
+
+<h4> 子页面（问题细节页） Subpage（comment page)  --> [commentPage.html(Up or Down)][18] , [commentPage2.html(Multiple choice)][19] </h4>
+
+
+- [x] 可对感兴趣的问题进行**赞/踩**投票，投票结果立即以 百分比条 动态显示，且投完票后不可更改选项。 效果如下：
+
+*Users can vote **Up/Down** in the questions that they are instersted in, and the result is directly displayed in percentage bar and cannot be changed. See:*
+
+![mainpage-upDown][13]
+
+- [x] 可对感兴趣的问题进行**多选项**投票（2至4选项），投票结果立即以 饼图 动态显示，且投完票后不可更改选项。 效果如下：
+
+*Users can vote **Multiple Choices** in the questions that they are instersted in, and the result is directly displayed in percentage bar and cannot be changed. See:*
+
+![mainpage-Multiple][14]
+
+- [x] （主页面）可展开/折叠某一问题的文字描述或评论，主页面打开时默认将所有过长文字收缩展示以限制单个问题的展示长度，评论也只展示一条，便于用户浏览更多的问题。子页面的问题描述不会被折叠，且所有关于该问题的评论都会被展示。 效果如下：
+
+*Users can expand or collapse the description or comments of one question in main page. When open main page, all questions that have too long text description will be collapsed by default and only one comment will be showed so that users can browse more questions handily. In subpage of questions, the description will not be collapsed and all comments of these question are displayed. See:*
+
+![mainpage-Collapse+image][15]
+
+- [x] 所有用于描述问题的图片，都可以点击放大查看，切换前后图片，再点击缩小回到页面，便于用户更好查看图片。 效果如上面的动图。
+
+*All pictures of question can be zoomed in and zoomed out so that users can look throught images more conveniently. See the GIF above.*
+
+
+- [x] 当用户浏览到页面的较后内容时，可按右下角按键一键回到页面顶部。 效果在下图可见。
+
+*When users browse the content of pages, users can press the Scroll-to-top button to return to the top of pages. See:*
+
+![mainpage-scroll-to-top][21]
+
+- [x] 用户可以对感兴趣的题目按收藏按钮，也可以再次点击取消收藏。 效果在下面手机尺寸的GIF图里可见。
+
+*Users can collect their favoraite questions by Star button, and they can also cancel collection by pressing Star button again. See the following GIF in phone size.*
+
+![mainpage-All-phone][17]
+
+- [x] 用户可点击主页面的“post your question”来发布自己的问题，也可以在子页面的“leave a comment"下发表对别人问题的评论。效果如上面动图。
+
+*Users can click the "Post your question" button in main page to publish their question. Users can also make comments on the "Leave a comment" block in subpages. See the GIF above.*
+
+- [x] 所有页面实现自适应（响应式网页），符合大部分主流笔记本、手机等设备的尺寸。 效果如上面动图。
+
+*All pages are self-adaption so that they can match most types of screen and display differently.*
+
+<h3 id="2.2.2"> 2. 使用技术  Techniques</h3>
+> * 饼图展示投票结果使用了 [Chart.js][20] 这个很酷炫的库，并对其中的Pie chart 的 JQuery 代码稍许改动以实现投票后重写饼图，或以json形式从后端获得已投票的结果并展示
+*The multiple choices voting shows result by using the Pie chart module of the [Chart.js][20] library, and the JQuery code has been modified to implement the redisplay of voting result, or transmit the voted data by json to the Pie chart module.*
+> * 图片展示的放大缩小功能使用了 [Zoom.js][22] 库
+*The function of zooming in or out employed the [Zoom.js][22] library.
 
 
   [1]: https://github.com/sriting
   [2]: https://github.com/junchen14
-  [3]: https://github.com/sriting
-  [4]: https://github.com/junchen14
-  [5]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/register.html
-  [6]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/register.html
-  [7]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/verification.html
-  [8]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/verification.html
-  [9]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/login.html
-  [10]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/login.html
-  [11]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/forgetpw.html
-  [12]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/forgetpw.html
-  [13]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/resetpw.html
-  [14]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/resetpw.html
-  [15]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/login.html
-  [16]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/login.html
-  [17]: register-iphone6.png
-  [18]: register-laptop.png
-  [19]: https://uigradients.com
-  [20]: https://pypi.python.org/pypi/DjangoCaptcha
+  [3]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/register.html
+  [4]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/verification.html
+  [5]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/login.html
+  [6]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/forgetpw.html
+  [7]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/resetpw.html
+  [8]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/login.html
+  [9]: image/register-iphone6.png
+  [10]: image/register-laptop.png
+  [11]: https://uigradients.com
+  [12]: https://pypi.python.org/pypi/DjangoCaptcha
+  [13]: image/mainpage-upDown.gif
+  [14]: image/mainpage-Multiple.gif
+  [15]: image/mainpage-Collapse+image.gif
+  [16]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/mainpage.html
+  [17]: image/mainpage-All-phone.gif
+  [18]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/commentPage.html
+  [19]: https://sriting.github.io/HowToChooose-website/HowToChooose-frontend/commentPage2.html
+  [20]: http://www.chartjs.org
+  [21]: image/mainpage-scroll-to-top.png
+  [22]: https://github.com/hakimel/zoom.js
+
+
