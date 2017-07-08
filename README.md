@@ -196,6 +196,7 @@ It is the register page in iPhone6 screen size. The empty space after verificate
 
 
 <h3 id="2.3.2"> 2. 使用技术  Techniques </h3>
+
 > * 在用户中心页使用了大量ajax异步来传输json，从而实现关注用户、删除问题、删除评论、删除收藏、删除系统消息等功能对后台数据库的异步请求而不需要重载整个页面。
 *The asynchronous request of Ajax is used in User Center page to transmit json data, so the functions, such as following other users and deleting questions, comments, collections and system messages, can send request to database and execute without reloading the whole page.*
 
@@ -215,7 +216,7 @@ It is the register page in iPhone6 screen size. The empty space after verificate
 
 ![post-UpDown][30]
 
-- [x] 选择 **多选(Multiple Choices）**的第二步（Step 2）：选择多选的个数、填写每个选项的内容、填写问题的描述、上传图片。填写描述和上传图片与上面类似。注意，多选的个数默认为2。选完选项后，选项内容栏的数量会根据选择的数目改变。所有选项内容栏不能为空，否则提交问题时网页会报告提交错误。完成填写，可按“Post”提交问题，也可按“Previous"返回上一步。效果如下图：
+- [x] 选择 **多选(Multiple Choices）** 的第二步（Step 2）：选择多选的个数、填写每个选项的内容、填写问题的描述、上传图片。填写描述和上传图片与上面类似。注意，多选的个数默认为2。选完选项后，选项内容栏的数量会根据选择的数目改变。所有选项内容栏不能为空，否则提交问题时网页会报告提交错误。完成填写，可按“Post”提交问题，也可按“Previous"返回上一步。效果如下图：
 
 * Step 2 of **Multiple Choices**: choose the number of choices, fill in contents of each choices, fill in description of question, upload pictures. Writing description and uploading images are similar to above. Note that the default number of multiple choices is 2. After you selected the number of choices, the number of choice content bars will change according to the number you choosed. All content of choice bars are not allowed to be empty, otherwise the webpage will report error when you submit question. After finishing, you can click "Post" to go forward or click "Previous" to go back. See:*
 
