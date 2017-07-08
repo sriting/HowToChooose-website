@@ -160,25 +160,25 @@ It is the register page in iPhone6 screen size. The empty space after verificate
 
 #### 个人信息页 (Personal information page)  -->  [personInfo.html][25]
 
-- [x] (搜索结果页）用户不仅可以通过关键字来搜索标题或内容与搜索内容相匹配的问题，还可以通过搜索用户名来得到用户搜索结果。
+- [x] （搜索结果页）用户不仅可以通过关键字来搜索标题或内容与搜索内容相匹配的问题，还可以通过搜索用户名来得到用户搜索结果。
 
 *(Search Result page) Users can not only search questions by titles or contents, but also search other user accounts by users' nickname.*
 
-- [x]（用户中心页）用户在自己的用户中心可以看到自己的“已发布问题”，“我的评论”，“我收藏的问题”，“我的投票历史”，“系统消息”和“我关注的用户”。其中除了“系统消息”，其他栏都默认对外开放可见（或根据用户在个人信息页的设置“对外不可见”来隐藏自己的动态），别的用户都可以浏览该用户的用户中心。
+- [x] （用户中心页）用户在自己的用户中心可以看到自己的“已发布问题”，“我的评论”，“我收藏的问题”，“我的投票历史”，“系统消息”和“我关注的用户”。其中除了“系统消息”，其他栏都默认对外开放可见（或根据用户在个人信息页的设置“对外不可见”来隐藏自己的动态），别的用户都可以浏览该用户的用户中心。
 
 *(User Center page) Users can view their own statements like "My posted questions", "My comments", "My collected quesiton", "My voting history", "System message" and "My followed users" in their user center. Except "System message", all other columns are visible to other users (unless the user set "hide the records from visitors" to conceal their status).*
 
-- [x]（用户中心页）用户可以删除自己的问题、评论、收藏、系统消息。注意，当用户删除自己的问题时，所有关于这个问题的投票和评论也都被删除了，所以HowToChooose社区规定：当投票总数超过50票时，该问题就成为公众问题，问题不可被提问者删除（该功能已在后端实现）。另外，用户不可以删除自己的投票记录，因为社区规定一旦用户投票完成以后，不可以改变自己的投票。
+- [x] （用户中心页）用户可以删除自己的问题、评论、收藏、系统消息。注意，当用户删除自己的问题时，所有关于这个问题的投票和评论也都被删除了，所以HowToChooose社区规定：当投票总数超过50票时，该问题就成为公众问题，问题不可被提问者删除（该功能已在后端实现）。另外，用户不可以删除自己的投票记录，因为社区规定一旦用户投票完成以后，不可以改变自己的投票。
 
 *(User Center page) Users can delete their posted question, comments, collections and system messages. Note that when users delete their posted questions, all votes and comments of this question will be removed too. Therefore, the How To Chooose community specifies that "When the number of votes exceeds 50, the question changes to public question and its questioner cannot delete it any more." (this function has been implement in back-end). In addition, users are not allowed to remove their voting histories because the community regulates that users cannot modify their votes after voting questions.*
 
-- [x]（用户中心页）当访问者进入其他社区成员的用户中心页时，访问者可以点击心形按钮来关注该用户，再次点击按钮可取消关注。
+- [x] （用户中心页）当访问者进入其他社区成员的用户中心页时，访问者可以点击心形按钮来关注该用户，再次点击按钮可取消关注。
 
-*(User Center page) When visitors enter user center of one member, visitor can follow this user by clicking the heart-shaped button. Clicking this button again can unfollow.
+*(User Center page) When visitors enter user center of one member, visitor can follow this user by clicking the heart-shaped button. Clicking this button again can unfollow.*
 
-- [x]（用户中心页）用户可以在自己的用户中心页的“Edit Profile"按钮来进入个人信息页面，除用户自己之外的访问者看不到这个按钮，也不能进入该用户的个人信息页面。 以上四条功能的效果可看下面的动图：
+- [x] （用户中心页）用户可以在自己的用户中心页的“Edit Profile"按钮来进入个人信息页面，除用户自己之外的访问者看不到这个按钮，也不能进入该用户的个人信息页面。 以上四条功能的效果可看下面的动图：
 
-*(User Center page) Users can press "Edit Profile" button in their own User Center page to enter the Personal Info page, while all other visitors are not allowed to see them. See：
+*(User Center page) Users can press "Edit Profile" button in their own User Center page to enter the Personal Info page, while all other visitors are not allowed to see them. See：*
 
 ![userCenter-All][26]
 
