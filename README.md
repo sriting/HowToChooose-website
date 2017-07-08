@@ -95,9 +95,9 @@ It is the register page in iPhone6 screen size. The empty space after verificate
 
 <h3 id="2.2.1"> 1. 功能  Functions</h3>
 
-<h4> 主页面（热门问题页） Main page (Hot topic page)  --> [mainpage.html][16] </h4>
+#### 主页面（热门问题页） Main page (Hot topic page)  --> [mainpage.html][16] 
 
-<h4> 子页面（问题细节页） Subpage（comment page)  --> [commentPage.html(Up or Down)][18] , [commentPage2.html(Multiple choice)][19] </h4>
+#### 子页面（问题细节页） Subpage（comment page)  --> [commentPage.html(Up or Down)][18] , [commentPage2.html(Multiple choice)][19] 
 
 
 - [x] 可对感兴趣的问题进行**赞/踩**投票，投票结果立即以 百分比条 动态显示，且投完票后不可更改选项。 效果如下：
@@ -144,10 +144,11 @@ It is the register page in iPhone6 screen size. The empty space after verificate
 *All pages are self-adaption so that they can match most types of screen and display differently.*
 
 <h3 id="2.2.2"> 2. 使用技术  Techniques</h3>
+
 > * 饼图展示投票结果使用了 [Chart.js][20] 这个很酷炫的库，并对其中的Pie chart 的 JQuery 代码稍许改动以实现投票后重写饼图，或以json形式从后端获得已投票的结果并展示
 *The multiple choices voting shows result by using the Pie chart module of the [Chart.js][20] library, and the JQuery code has been modified to implement the redisplay of voting result, or transmit the voted data by json to the Pie chart module.*
 > * 图片展示的放大缩小功能使用了 [Zoom.js][22] 库
-*The function of zooming in or out employed the [Zoom.js][22] library.
+*The function of zooming in or out employed the [Zoom.js][22] library.*
 
 
   [1]: https://github.com/sriting
