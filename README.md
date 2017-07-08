@@ -162,7 +162,7 @@ It is the register page in iPhone6 screen size. The empty space after verificate
 
 - [x] (搜索结果页）用户不仅可以通过关键字来搜索标题或内容与搜索内容相匹配的问题，还可以通过搜索用户名来得到用户搜索结果。
 
-*(Search Result page) Users can not only search questions by titles or contents, but also search other user accounts by users' nickname.
+*(Search Result page) Users can not only search questions by titles or contents, but also search other user accounts by users' nickname.*
 
 - [x]（用户中心页）用户在自己的用户中心可以看到自己的“已发布问题”，“我的评论”，“我收藏的问题”，“我的投票历史”，“系统消息”和“我关注的用户”。其中除了“系统消息”，其他栏都默认对外开放可见（或根据用户在个人信息页的设置“对外不可见”来隐藏自己的动态），别的用户都可以浏览该用户的用户中心。
 
