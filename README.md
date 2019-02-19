@@ -34,7 +34,7 @@ HowToChooose 网站正如名字一样，Chooose中多的一个o象征着年轻�
 
 <h2 id="1.2"> 网站技术  Technologies</h2>
 
-这是一个小组作业的作品，网站的开发部分主要由两个人负责。我 [sriting][1] - 前端页面设计开发；陈军 [garvinchen][2] 负责后端数据库开发。组里其他有调查、设计、测试、报告工作的组员有：刘一宁、王烯、付艾宁、陈珂瑾、陈鑫圆。  
+这是一个小组作业的作品，网站的开发部分主要由两个人负责。我蔡佳人 [sriting][1] - 前端页面设计开发；陈军 [garvinchen][2] 负责后端数据库开发。组里其他有调查、设计、测试、报告工作的组员有：刘一宁、王烯、付艾宁、陈珂瑾、陈鑫圆。  
 *It's a group project that website is completed by two authors. I, [sriting][1] , am responsible for front-end design and programming, and Chen Jun, [garvinchen][2] , is in charge of back-end database. Other teammates that work on survey, design, testing and report are Liu Yining, Wang Xi, Fu Aining, Chen Kejin, Chen Xinyuan.* 
 
 前端部分使用（front-end）： `html5`, `css3`, `javaScript`, `jQuery`, `Bootstrap`
